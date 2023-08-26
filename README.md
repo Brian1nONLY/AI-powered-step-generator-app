@@ -22,3 +22,11 @@ A AI-powered step generator application where users, by telling what they want t
 ### Architecture
 
 ![image](https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/8e5cd4ce-9e02-46ca-a0d9-7668a7e60d1e)
+
+### Project Structure
+
+![image](https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/cb593d14-7b17-4c83-a199-dc8ce8627f79)
+
+**client** -> Front-end | React.js, Tailwind
+
+**server** -> Back-end | Node.js, Express.js
