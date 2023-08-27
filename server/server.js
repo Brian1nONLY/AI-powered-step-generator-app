@@ -1,27 +1,27 @@
-require = require("esm")(module/*, options*/);
+import 'dotenv/config';
 
+import OpenAI from "openai";
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import { Configuration, OpenAIApi } from "openai";
 
 const app = express();
 const port = 8000;
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.json());
 
-const Configuration = new Configuration({
+
+const configuration = new OpenAI({
   organization: "org-enYIlEXQ5qlWSRSdICfxzlyo",
-  key: "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
-const openai = new OpenAIApi(Configuration);
+const openai = new OpenAIApi(OpenAI);
 
 app.post("/", async (req, res) => {
   const { chat } = req.body;
 
 
- const result = await openai.createChatCompletion({
+ const result = await openai.chat.completions.create({
   model: "gpt-3.5-turbo",
   messages: [
     {
