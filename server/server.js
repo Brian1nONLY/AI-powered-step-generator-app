@@ -1,5 +1,6 @@
-import 'dotenv/config';
+//import 'dotenv/config';
 
+import dotenv from "dotenv";dotenv.config();
 import OpenAI from "openai";
 import express from "express";
 import cors from "cors";
@@ -11,14 +12,14 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-const configuration = new OpenAI({
-  organization: "org-enYIlEXQ5qlWSRSdICfxzlyo",
-  apiKey: process.env.OPENAI_API_KEY,
+const openai = new OpenAI({
+  apiKey: process.env.API_KEY, //this will only work if you make a .env file in your local files and paste
+  // the API Key, since I cannot upload the API KEY to Github. When hosting the app on a hosting service, theres
+  // a different thing to be done - NOTE TO FUTURE SELF.
 });
-const openai = new OpenAIApi(OpenAI);
 
 app.post("/", async (req, res) => {
-  const { chat } = req.body;
+  const { chats } = req.body;
 
 
  const result = await openai.chat.completions.create({
@@ -28,11 +29,16 @@ app.post("/", async (req, res) => {
       role: "system",
       content: "You are a Steps Generator. You generate detailed and well planned steps or checklists for a given task",
     },
-    ...chat,
+    ...chats,
   ],
+  
  });
 
- res.json({ output: result.data.choices[0].message });
+ if (result && result.choices && result.choices.length > 0) {
+  res.json({ output: result.choices[0].message });
+} else {
+  res.json({ error: "Invalid response from the API" });
+}
 });
 
 
