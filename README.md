@@ -8,7 +8,7 @@ Waste of time and productivity due to excessive planning or not knowing what to 
 
 ## The Solution
 
-A AI-powered step generator application where users, by telling what they want to do, will get a detailed walkthrough for that task
+Using an AI-powered step generator application, users will get a detailed walkthrough for that task by telling the app what they want to do
 
 
 ## How it will work
