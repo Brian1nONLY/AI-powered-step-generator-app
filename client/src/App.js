@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-//import Logo from "./Assets/Logo.png";
+import Logo from "./Assets/Logo.png";
 import "./App.css";
 import InputField from "./Components/InputField";
-
+import Step from "./Components/Step";
 import Heading1 from "./Components/Heading1";
 function App() {
 
+  
   const [message, setMessage] = useState("");
   const [chats, setChats] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
@@ -43,12 +44,36 @@ function App() {
   };
 
   return (
-    <main className="p-4 flex flex-col items-center bg-white">
-      <img src={Logo} className="h-36"></img>
-
-      <div className="flex items-center justify-center mt-4">
-        <Heading1 content="What do you want to plan?" size="6xl" />
+   <div className="flex bg-notebook h-screen gap-y-10 flex-col align-center justify-center">
+      <div className="flex flex-row justify-center">
+      <img src = {Logo} className="h-36"></img>
       </div>
+      <Heading1 
+      content = "So, What are we doing today?" fontSize = "3xl">
+      </Heading1>
+      
+      <div className=" flex-row justify-center gap-y-5">
+
+
+        <form
+          onSubmit={(e) => chat(e, message)}
+          className="flex flex-col items-center gap-y-5 justify-center"
+        >
+          <input
+            type="text"
+            name="messge"
+            value={message}
+            placeholder="Study for my math exam"
+            onChange={(e) => setMessage(e.target.value)}
+            className="bg-zinc-200 text-xl h-64 w-10/12 rounded-3xl placeholder:italic font-body placeholder:text-zinc-400  align-left p-6"
+            />
+         <button className="text-3xl h-11 w-8/12 bg-zinc-800 rounded-3xl font-h1 text-white" type ="submit">Let's plan this!</button>
+    
+        </form>
+
+
+      </div>
+
 
       <section className="w-full mt-4 w-9/12">
         {chats && chats.length ? (
@@ -56,44 +81,23 @@ function App() {
             <p
               key={index}
               className={`${
-                chat.role === "user" ? "bg-gray-100" : "bg-gray-300"
+                chat.role === "user" ? "bg-gray-100 hidden" : "bg-white"
               } p-2 rounded`}
             >
-              <span>
-                <b>{chat.role.toUpperCase()}</b>
-              </span>
-              <span>: </span>
-              <span>{chat.content}</span>
+              
+      
+              <div>
+
+              </div>
+            
+              <span style={{ whiteSpace: "pre-line" }}>{chat.content}</span>
+           
             </p>
           ))
         ) : (
-          <p>Nothing planned so far!</p>
+          <p></p>
         )}
       </section>
-      
-      <div className="flex items-center justify-center mt-4">
-        </div>
-      <div className="bg-gray-200 p-4 w-9/12">
-        <form
-          onSubmit={(e) => chat(e, message)}
-          className="flex items-center justify-center"
-        >
-          <input
-            type="text"
-            name="message"
-            value={message}
-            placeholder="Type a message here and hit Enter..."
-            onChange={(e) => setMessage(e.target.value)}
-            className="border border-gray-300 rounded p-2 w-9/12"
-          />
-          <button
-            type="submit"
-            className="bg-black text-white px-4 py-2 ml-2 rounded w-1/6"
-          >
-            Lets plan this!
-          </button>
-        </form>
-      </div>
 
       <div
         className={`flex items-center justify-center mt-4 ${
@@ -104,8 +108,12 @@ function App() {
           <i>{isTyping ? "Typing" : ""}</i>
         </p>
       </div>
-    </main>
+
+
+    </div>
   );
 }
+
+
 
 export default App;

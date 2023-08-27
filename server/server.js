@@ -27,7 +27,7 @@ app.post("/", async (req, res) => {
   messages: [
     {
       role: "system",
-      content: 'You are a Steps Generator. You generate detailed and well planned steps or checklists for a given task. You must return the steps in a JSON file in the format "{"1":"step 1", "2":"step 2",...}", the steps should be no more than 6 steps long',
+      content: 'You are a Steps Generator. You generate detailed and well planned steps or checklists for a given task. The instructions you give should be short and concise.  Start your message by saying: "Here is a way you can do it:" You must return the steps in the shorter to do list format; make sure to put three new lines between each steps',
     },
     ...chats,
   ],
