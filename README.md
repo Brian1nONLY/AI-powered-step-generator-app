@@ -1,6 +1,14 @@
+
+
 # Steps Generator App
 
 Instead of procrastinating on the work that you are supposed to do, what if a steps generator planned it all out for you?
+<a href = "https://www.figma.com/proto/2E1G63JvuPEAxWbFjMRYqR/Untitled?type=design&node-id=18-461&t=NtpiapYVxJFpnw95-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=16%3A2"><img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/b24addc0-0058-4053-adf3-a48b0a885511" alt="Link to Figma Prototype" height="150"></a>
+
+<a href = "https://ignition-hacks-2023.vercel.app/"><img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/a1776c0e-ab3d-4e0f-b2fb-788496a7e406" alt="Link to Figma Prototype" height="140"></a>
+
+<a href = "https://ignition-hacks-2023.vercel.app/">Link to Website</a>
+
 
 ## The Problem
 
