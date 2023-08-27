@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-//import Logo from "./Assets/Logo.png";
+import Logo from "./Assets/Logo.png";
 import "./App.css";
-import InputField from "./Components/InputField";
+
 
 import Heading1 from "./Components/Heading1";
 function App() {
@@ -50,7 +50,7 @@ function App() {
         <Heading1 content="What do you want to plan?" size="6xl" />
       </div>
 
-      <section className="w-full mt-4 w-9/12">
+      <section className="w-full mt-4 w-8/12">
         {chats && chats.length ? (
           chats.map((chat, index) => (
             <p
@@ -73,7 +73,7 @@ function App() {
       
       <div className="flex items-center justify-center mt-4">
         </div>
-      <div className="bg-gray-200 p-4 w-9/12">
+      <div className="bg-gray-200 p-4 w-8/12">
         <form
           onSubmit={(e) => chat(e, message)}
           className="flex items-center justify-center"
@@ -101,7 +101,7 @@ function App() {
         }`}
       >
         <p>
-          <i>{isTyping ? "Typing" : ""}</i>
+          <i>{isTyping ? "Typing..." : ""}</i>
         </p>
       </div>
     </main>
