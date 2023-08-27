@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Logo from "./Assets/Logo.png";
+//import Logo from "./Assets/Logo.png";
 import "./App.css";
 import InputField from "./Components/InputField";
 
 import Heading1 from "./Components/Heading1";
 function App() {
- 
+  const Logo = "https://cdn-icons-png.flaticon.com/128/11180/11180172.png";
+
   return (
    <div className="flex bg-notebook h-screen gap-y-10 flex-col align-center justify-center">
       <div className="flex flex-row justify-center">
