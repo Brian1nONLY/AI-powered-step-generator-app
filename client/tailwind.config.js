@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        h1: ['Alegreya Sans SC', 'sans-serif']
+    }
+  },
   },
   plugins: [],
 }
