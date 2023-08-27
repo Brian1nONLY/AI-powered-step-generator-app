@@ -6,14 +6,14 @@ Instead of procrastinating on the work that you are supposed to do, what if a st
 
 
 <p align="center" >
-  <a href="https://ignition-hacks-2023.vercel.app/">
+  <a href="https://steps-ignition.vercel.app/">
     <img src="https://github.com/Doodoal/Ignition-Hacks-2023/blob/main/Ignition%20Hacks.png" alt="Link to Figma Prototype" height="300" href="https://ignition-hacks-2023.vercel.app/" >
   </a>
 </p>
 
 ---
 
-<a href = "https://ignition-hacks-2023.vercel.app/">Link to Website</a>
+<a href = "https://steps-ignition.vercel.app/">Link to Website</a>
 
 
 
