@@ -49,5 +49,5 @@ Using an AI-powered step generator application, users will get a detailed walkth
 ## Design
 
 <a href = "https://www.figma.com/proto/2E1G63JvuPEAxWbFjMRYqR/Untitled?type=design&node-id=18-461&t=NtpiapYVxJFpnw95-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=16%3A2">
-<img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/b24addc0-0058-4053-adf3-a48b0a885511" alt="Link to Figma Prototype" height="150"><img/>
+<img src="https://github.com/Doodoal/Ignition-Hacks-2023/blob/main/Figma%20prototype.png" alt="Link to Figma Prototype" height="150"><img/>
 </a>
