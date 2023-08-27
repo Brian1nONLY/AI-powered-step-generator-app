@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        h1: ['Alegreya Sans SC', 'sans-serif']
+        h1: ['Alegreya Sans SC', 'sans-serif'],
+        body: ['Snippet', 'sans-serif']
     },backgroundImage: {
       'notebook': "url('./Assets/bg.svg')"
     }
