@@ -5,7 +5,7 @@
 Instead of procrastinating on the work that you are supposed to do, what if a steps generator planned it all out for you?
 
 
-<p align="center" ><a href = "https://ignition-hacks-2023.vercel.app/"><img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/874c1326-858d-4179-b6c5-bfd0976f543c" alt="Link to Figma Prototype" height="300"></a></p>
+<p align="center" ><a href="https://ignition-hacks-2023.vercel.app/"><img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/874c1326-858d-4179-b6c5-bfd0976f543c" alt="Link to Figma Prototype" height="300"></a></p>
 
 ---
 
