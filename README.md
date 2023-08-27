@@ -5,7 +5,11 @@
 Instead of procrastinating on the work that you are supposed to do, what if a steps generator planned it all out for you?
 
 
-<p align="center" ><a href="https://ignition-hacks-2023.vercel.app/"><img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/874c1326-858d-4179-b6c5-bfd0976f543c" alt="Link to Figma Prototype" height="300"></a></p>
+<p align="center" >
+  <a href="https://ignition-hacks-2023.vercel.app/">
+    <img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/874c1326-858d-4179-b6c5-bfd0976f543c" alt="Link to Figma Prototype" height="300" href="https://ignition-hacks-2023.vercel.app/" >
+  </a>
+</p>
 
 ---
 
@@ -44,4 +48,6 @@ Using an AI-powered step generator application, users will get a detailed walkth
 
 ## Design
 
-<a href = "https://www.figma.com/proto/2E1G63JvuPEAxWbFjMRYqR/Untitled?type=design&node-id=18-461&t=NtpiapYVxJFpnw95-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=16%3A2"><img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/b24addc0-0058-4053-adf3-a48b0a885511" alt="Link to Figma Prototype" height="150"></a>
+<a href = "https://www.figma.com/proto/2E1G63JvuPEAxWbFjMRYqR/Untitled?type=design&node-id=18-461&t=NtpiapYVxJFpnw95-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=16%3A2">
+<img src="https://github.com/Doodoal/Ignition-Hacks-2023/assets/72891698/b24addc0-0058-4053-adf3-a48b0a885511" alt="Link to Figma Prototype" height="150"><img/>
+</a>
